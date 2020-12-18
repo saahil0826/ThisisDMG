@@ -1,0 +1,35 @@
+@media only screen and (min-width: 1124px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .bg {
+    background-color: #e0e0e0;
+    height: 150vh;
+  }
+
+  .nav-icon {
+    a {
+      display: none;
+    }
+
+    img {
+      height: 25px;
+      width: 25px;
+      margin: auto;
+    }
+  }
+
+  #search {
+    display: none;
+  }
+
+  .right-links {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+
+    #srchsmall {
+      display: block;
+    }
+  }
+}

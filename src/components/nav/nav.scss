@@ -1,0 +1,138 @@
+$border-blue: 1px solid blue;
+$border-green: 1px solid green;
+$border-yellow: 1px solid yellow;
+$border-pink: 1px solid pink;
+$border-brown: 1px solid brown;
+$border-purple: 1px solid purple;
+$border-crimson: 1px solid crimson;
+$border-cyan: 1px solid cyan;
+
+.hover {
+  color: black;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.shadow {
+  -webkit-box-shadow: 0 4px 6px -6px black;
+  -moz-box-shadow: 0 4px 6px -6px black;
+  box-shadow: 0 4px 6px -6px black;
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    height: 5px;
+    width: 100%;
+    background-color: white;
+
+    .search {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      input[type="text"] {
+        border-radius: 40px;
+        width: 90%;
+        padding: 9px 0;
+        border: 1px solid grey;
+        text-align: left;
+      }
+
+      ::placeholder {
+        margin-top: 5px;
+        font-size: 1.5em;
+        padding: 1em;
+      }
+
+      #search-icon {
+        height: 30px;
+        width: 30px;
+        margin-left: -32px;
+      }
+    }
+  }
+
+  img {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.nav-icon {
+  display: flex;
+  flex-direction: column;
+  &:hover:hover {
+    @extend .hover;
+  }
+}
+
+.nav-icon img {
+  height: 20px;
+  width: 20px;
+  align-self: center;
+  margin-bottom: 5px;
+}
+
+.right-links {
+  display: flex;
+}
+
+.right-links a {
+  padding: 0 20px;
+  text-decoration: none;
+  color: inherit;
+  color: grey;
+  &:hover {
+    @extend .hover;
+  }
+}
+
+#arr {
+  height: 10px;
+  width: 15px;
+}
+//this #arr is
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+a{
+  &:hover {
+    @extend .hover;
+  }
+}
+
+
+  .dropdown-content {
+    display: block;
+    position: absolute;
+    margin-top: 14px;
+    left: -24px;
+    background-color: black;
+    min-width: 160px;
+    z-index: 1;
+
+    a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      border: 0.5px solid grey;
+      text-align: center;
+
+      &:hover {
+        @extend .hover;
+        background-color: white;
+      }
+    }
+  }
+}
+
+#srchsmall{
+  display: none;
+}
